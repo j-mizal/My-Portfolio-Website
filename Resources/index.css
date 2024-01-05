@@ -108,7 +108,9 @@ body, html {
     margin-top: 10px;
     margin-left: 15px;
     padding-right: 55px;
-    
+    position: fixed;
+    top: 25px;
+    right: 30px;
 }
 
 .links a {
@@ -117,7 +119,7 @@ body, html {
     font-weight: 600;
     color:#27385C;
     padding-right: 10px;
-    
+   
 }
 
 /* Hero Section */
@@ -283,7 +285,7 @@ label input {
     font-weight: 600;
     color: #51638A;
     border-right: 5px solid #2E6BF0;
-    width: 97%;
+    width: 500px;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 5s steps(50) infinite, cursor 1s infinite;
@@ -608,7 +610,43 @@ body.active .portfolio-box  {
   }
 
   /* Screen Responsiveness */
+  
+  @media (max-width: 1500px) {
+    .links a {
+        font-size: 1rem
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+    }
 
+    .intro p {
+        display: none;
+    }
+
+    .photo img {
+        margin-top: 50px;
+    }
+
+    .photo p {
+        display: flex;
+        align-self: end;
+    }
+
+    .photo {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        align-items: center;
+    }
+    
+    .social-links {
+        align-self: flex-start;
+    }
+
+  }
   @media (max-width: 1000px) {
     .hamburger {
         display: flex;
@@ -616,6 +654,12 @@ body.active .portfolio-box  {
 
     .links {
         display: none;
+    }
+
+    .skill-logos {
+        flex-wrap: wrap;
+        justify-content: center; 
+        grid-gap: 15px;
     }
 }
 
@@ -660,14 +704,11 @@ body.active .portfolio-box  {
         padding-top: 25px;
     }
 
-    .photo p {
-        display: flex;
-        align-self: end;
-    }
+  
 
 
     .social-links a {
-        font-size: 1rem;
+        font-size: .95rem;
         padding-right: 3px;
         padding-left: 1px;
     }
@@ -676,11 +717,7 @@ body.active .portfolio-box  {
         margin: 50px;
     }
 
-    .skill-logos {
-        flex-wrap: wrap;
-        justify-content: center; 
-        grid-gap: 15px;
-    }
+  
     
     .skill-logos img {
        padding-left: 20px;
