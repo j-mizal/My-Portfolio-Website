@@ -4,10 +4,11 @@ html {
 }
 
 
-body {
-    padding: 0;
-    margin: 0;
-}
+body, html {
+    overflow-x: hidden;
+    margin: 0; 
+    padding: 0; 
+  }
 
 
 
@@ -46,7 +47,7 @@ body {
     align-content: center;
     width: 100%;
     position: fixed;
-    top: 100px;
+    top: 85px;
     right: 0;
     margin-top: 0;
     padding-top: 20px;
@@ -320,6 +321,7 @@ label input {
     font-weight: 700;
     transition: transform .6s ease-in-out;
     display: inline-block;
+    text-align: center;
 }
 
 .intro a:hover {
@@ -607,10 +609,18 @@ body.active .portfolio-box  {
 
   /* Screen Responsiveness */
 
-  @media (max-width: 815px) {
+  @media (max-width: 1000px) {
     .hamburger {
         display: flex;
     }
+
+    .links {
+        display: none;
+    }
+}
+
+  @media (max-width: 815px) {
+ 
 
     .nav-container nav {
         height: 50px;
@@ -783,7 +793,7 @@ body.active .portfolio-box  {
 
  @media (max-width: 445px) {
     .intro {
-        margin-left: 30px;
+        margin-left: 60px;
     }
 
     .photo img {
@@ -791,12 +801,23 @@ body.active .portfolio-box  {
         width: 150px;
     }
 
+    .photo p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
     .skill {
         width: 260px;
     }
 
     .social-links {
-        margin-left: 15px;
+        margin-left: 30px;
+    }
+
+    #cv {
+        width: 95px;
+        height: 12px;
+        font-size: .8rem;
     }
 
  }
