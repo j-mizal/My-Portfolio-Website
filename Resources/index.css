@@ -781,7 +781,7 @@ body.active .portfolio-box  {
     
     .intro h3 {
       font-size: .95rem;
-    
+        width: 410px;
     }
 
     .photo p {
@@ -830,7 +830,7 @@ body.active .portfolio-box  {
 
  @media (max-width: 445px) {
     .intro {
-        margin-left: 60px;
+        margin-left: 75px;
     }
 
     .photo img {
@@ -844,11 +844,11 @@ body.active .portfolio-box  {
     }
 
     .skill {
-        width: 260px;
+        width: 245px;
     }
 
     .social-links {
-        margin-left: 30px;
+        margin-left: 45px;
     }
 
     #cv {
